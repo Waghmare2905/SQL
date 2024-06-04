@@ -1,0 +1,81 @@
+1.Explain the various types of Joins?
+2. Explain Equi join?
+3. Explain the Right Outer Join?
+4. How do you alter the name of a column?
+5. how can you build a stored procedure?
+6. Distinguish between MongoDB and MySQL?
+7. Compare the 'Having' and 'Where' clauses in detail?
+8. What are the differences between COALESCE() and ISNULL()?
+9. What is the difference between “Stored Procedure” and “Function”?
+10. What is the difference between the “DELETE” and “TRUNCATE” commands?
+11. What is difference between “Clustered Index” and “Non Clustered Index”?
+12. What is the difference between “Primary Key” and “Unique Key”?
+13. What is the difference between a “Local Temporary Table” and “Global Temporary Table”?
+14. What is the difference between primary key and unique constraints?
+15. What are the differences between DDL, DML and DCL in SQL?
+16. What is a view in SQL? How to create view?
+17. What is a Trigger?
+18. What is the difference between Trigger and Stored Procedure?
+19. What are indexes?
+20. What are Primary Keys and Foreign Keys?
+21. What are wildcards used in database for Pattern Matching?
+22. What is Union, minus and Interact commands?
+23. What is RDBMS?
+24. What is OLTP?
+25. What is Aggregate Functions?
+26. What is the difference between UNION and UNION ALL?
+27. What is a foreign key, and what is it used for?
+
+Scenario Based Questions--
+❗ SQL Query to find second highest salary of Employee?
+❗ SQL Query to find Max Salary from each department?
+❗ Write SQL Query to display current date?
+❗ Write an SQL Query to check whether date passed to Query is date of given format or not?
+❗ Write a SQL Query to print the name of distinct employee whose DOB is between 01/01/1960 to 31/12/1975?
+❗ Write an SQL Query to find employee whose Salary is equal or greater than 10000?
+❗ Write an SQL Query to find name of employee whose name Start with ‘M’?
+❗ Find the 3rd MAX salary in the emp table?
+❗ Suppose there is annual salary information provided by emp table.
+❗How to fetch monthly salary of each and every employee?
+❗Display the list of employees who have joined the company before 30th June 90 or after 31st dec 90?
+
+SQL Order of Execution:
+1. FROM
+2. JOINS/ON
+3. WHERE
+4. GROUP BY
+5. HAVING
+6. WINDOW
+7. SELECT
+8. DISTINCT
+9. ORDER BY
+10. LIMIT
+
+
+
+
+ANKIT BANSAL ZERO TO HERO:
+
+1. Why SQL Database is required to store data and what are the advantages of using SQL over legacy Excel spreadsheets?
+--Because databases store information more efficiently, databases can handle volumes of information that would be unmanageable in a spreadsheet. Spreadsheets have record limitations whereas databases do not. Compared to databases, spreadsheets can require a large amount of hard-drive space for data storage.
+2. Basic concepts of SQL i.e. What is Schema, Database, Table, Row or Record, Attribute or Column, Data Types etc.
+3. How to create a Database and Table in MS-SQL Server (SSMS)?
+4. How to insert values into a Table?
+5. How to query records from a Table (all columns, single column and multiple columns)?
+6. Sequence of basic SQL querying in the Background i.e. FROM --> SELECT columns etc.
+7. How to limit the columns and the number of records queried from a Table?
+8. How to include comments (single line and multi-line) in a SQL script?
+9. How to sort the records (either in ascending or descending order) on single or multiple columns queried from a Table?
+10. What are the types of SQL commands ? DDL, DML, DQL etc.
+11. Difference between DROP and DELETE commands?
+12. How to import an excel data set into SSMS via Import Wizard of the UI interface?
+13. How to create Tables using the UI interface? 
+14. How to create New Schemas using the UI interface?
+
+
+
+
+
+
+
+

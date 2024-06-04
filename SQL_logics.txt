@@ -1,0 +1,54 @@
+1.sum(case when condition then 1 else 0 end) over(order by column)--it use when we have to make or assign consecutive number into one common number
+
+2.when we want to extract consecutive number then use ID column - row_number and then group by
+
+3.For Median--Give me those rows whose row_ number is between total_count*1.0/2 and total_count*1.0/2 +1
+
+4.For pivot
+SELECT rn,max(CASE WHEN CITY='Bangalore' then name end) as Bangalore,
+max(CASE WHEN CITY='Mumbai' then name end) as Mumbai,
+max(CASE WHEN CITY='Delhi' then name end) as Delhi
+from
+(select name,city,row_number()over(partition by city order by name) as rn
+from players_location) A
+group by rn
+order by rn
+
+Pivot directly
+select value_which_are_going_to_be_column
+from
+(
+select column_names from table) as source_table
+pivot
+(
+aggregate_function
+for
+column_name_whose_values_are_going_to_be_a_column_name IN (values)
+)
+
+
+5.When we are checking for 2nd recent activity use row_number and also if there is only one activity then check count both count=1 or row_number=2 will give result
+
+6.Recursive CTE
+by default max recursion is 100
+option(maxrecursion 1000)
+WITH cte as 
+(
+select 1 as n ----anchor query
+Union all
+select n+1 --recursive query
+from cte
+where n<10 --filter to stop the query 
+)
+
+6.1127. User Purchase Platform ---Very good and tricky question
+
+7.If we want to compare with previous value then you can take first occurance date with min(date)
+
+8.GROUP_CONCAT ( DISTINCT emp_id ORDER BY emp_id  SEPARATOR', ')  is use to combine column values in one row
+
+9.string_agg(column_name_which_we_need_to_agg, Seperator) we can't use distinct function here s0 first we are taking distinct values then doing string_agg
+
+10.datepart(date unit,fromwhichdate),datediff(dateunit,date1,date2),dateadd(date unit,howmanyunit,inwhichdate),dayname(),monthname()
+
+11.avg(case when order_date=customer_pref_delivery_date then 1 else 0 end)*100 it will averaging based if total is 49 and out of that 17 matching condition then 17/49=34.68%
